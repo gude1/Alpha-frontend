@@ -3,7 +3,7 @@ import Table from "../../components/Table/Table";
 import { getTimeSeriesData } from "../../api/alpha";
 import Spinner from "../../components/Spinner/Spinner";
 import Button from "../../components/Button/Button";
-import { formatTimeSeriesData, getFirstObjectKeys } from "../../utils";
+import { formatTimeSeriesData } from "../../utils";
 
 function Home() {
   const [res, setRes] = useState<TimeSeriesResponse | null>(null);
