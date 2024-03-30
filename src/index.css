@@ -40,14 +40,4 @@
     outline: none;
   }
 
-  /* Firefox */
-  * {
-    scrollbar-width: 0px;
-    /* scrollbar-color: #E5E5E5 transparent; */
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    display: none;
-  }
 }

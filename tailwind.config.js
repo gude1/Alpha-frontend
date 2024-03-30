@@ -7,37 +7,17 @@ module.exports = {
       "sequel-sans": ["sequel-sans"],
     },
     keyframes: {
-      "cursor-blink": {
-        "from, to": {
-          opacity: 0,
-        },
-        "50%:": {
-          opacity: 1,
-        },
-      },
-      slideinup: {
+      spin: {
         "0%": {
-          opacity: 0,
-          transform: "translateY(50vh)",
+          transform: "rotate(0deg)",
         },
         "100%": {
-          opacity: 1,
-          transform: "none",
-        },
-      },
-      slideindown: {
-        "0%": {
-          opacity: 0,
-          transform: "translateY(-50%)",
-        },
-        "100%": {
-          opacity: 1,
-          transform: "none",
+          transform: "rotate(360deg)",
         },
       },
     },
     animation: {
-      "slide-in-up": "slideinup 0.6s",
+      spin: "spin 1s linear infinite",
     },
   },
   plugins: [],
