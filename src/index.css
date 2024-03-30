@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+  font-family: "sequel-sans";
+  src: url("/public/fonts/sequel-sans.ttf");
+  font-display: swap;
+}
+
+
+@layer base {
+
+  html,
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    box-sizing: border-box;
+  }
+
+  input select,
+  textarea {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    -webkit-touch-callout: text;
+    border: none;
+    outline: none;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+  }
+
+  /* Firefox */
+  * {
+    scrollbar-width: 0px;
+    /* scrollbar-color: #E5E5E5 transparent; */
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    display: none;
+  }
+}

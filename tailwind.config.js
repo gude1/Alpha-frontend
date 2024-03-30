@@ -4,10 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      "open-sans": ["open-sans"],
-      "open-sans-condensed-bold": ["open-sans-condensed-bold"],
       "sequel-sans": ["sequel-sans"],
-      "sequel-sans-bold": ["sequel-sans-bold"],
     },
     keyframes: {
       "cursor-blink": {
